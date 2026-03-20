@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+header p {
+    font-size: 2rem;
+}
+
+footer p {
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 15px 5px #2b3784;
+    box-shadow: 5px 5px 15px 5px #2b3784;
+
+}
+
+h1 {
+    font-size: 5rem;
+    padding-top: 2%;
+    letter-spacing: 1rem;
+}
+
+h2 {
+    border-bottom: 1px dotted #2b3784;
+    border-left: 10px solid #2b3784;
+    padding-left: 10px;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .social {
+    margin: 30px;
+}
+
+main .social img {
+    max-width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+main .social img:hover {
+    transform: scale(1.2);
+}
+
+
+article {
+    background-color: #E5E9F4;
+    border: 1px dotted gray;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 10px 3px #383737;
+    box-shadow: 3px 3px 10px 3px #383737;
+}
+
+article * {
+    margin: 15px;
+}
+
+
+body {
+    background-image: linear-gradient(to left, rgb(73, 70, 70), rgb(164, 162, 162), rgb(73, 70, 70))
+}
+
+footer, header {
+    background-color: #2b3784;
+    color: #2b3784;
+    margin: 0;
+}
+header {
+    margin-bottom: 40px;
+    background-image: linear-gradient(to bottom, #df1f2d, #b11313);  
+}
+footer {
+    -webkit-box-shadow: 3px -8px 10px 3px #2b3784; 
+    box-shadow: 3px -8px -8px 3px #2b3784;
+     margin-top: 40px;
+    background-image: linear-gradient(to bottom, #df1f2d, #b11313);  
+}
+
+a {
+    text-decoration: none;
+    color: #E5E9F4;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: black;
+}
+
+.autor {
+    text-align: right;
+    color:rgb(111, 111, 111);
+    font-style: italic;
+}
+
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
