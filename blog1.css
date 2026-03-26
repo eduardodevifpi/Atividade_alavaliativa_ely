@@ -17,6 +17,23 @@ nav ul {
     font-size: 1.3rem;
 }
 
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 2px solid #E5E9F4;
+    color: #E5E9F4;
+    font-size: 2rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-top: 10px;
+}
+
+.menu-toggle:hover {
+    background: rgba(229, 233, 244, 0.2);
+}
+
 header p {
     font-size: 2rem;
 }
@@ -59,14 +76,40 @@ main {
     grid-template-columns: 70% 30%;
 }
 
-main .social {
+main .sidebar {
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .filmes,
+main .social {
+    background-color: #E5E9F4;
+    border: 1px dotted gray;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+main .filmes h2,
+main .social h3 {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+main .filmes ul {
+    list-style: inside disc;
+    padding-left: 0;
+}
+
+main .filmes li {
+    margin-bottom: 10px;
 }
 
 main .social img {
     max-width: 100%;
     cursor: pointer;
-    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 main .social img:hover {
@@ -88,6 +131,14 @@ article {
 
 article * {
     margin: 15px;
+}
+
+article img.post-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+    border-radius: 10px;
 }
 
 
@@ -117,6 +168,16 @@ a {
     text-transform: uppercase;
 }
 
+main .filmes a {
+    color: #000;
+    text-transform: none;
+    font-weight: normal;
+}
+
+main .filmes a:hover {
+    color: #2b3784;
+}
+
 a:hover {
     color: black;
 }
@@ -131,5 +192,52 @@ a:hover {
 @media (max-width: 900px) {
   main {
     grid-template-columns: 1fr;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  header {
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  header p {
+    font-size: 1.4rem;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  nav.open {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(229, 233, 244, 0.3);
+    padding: 8px 0;
+  }
+
+  nav ul li:first-child {
+    border-top: none;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
   }
 }

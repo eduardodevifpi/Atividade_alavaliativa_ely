@@ -14,6 +14,7 @@
         <header>
             <h1>Homem Aranha</h1>
             <p>Um blog sobre o herói mais querido do mundo!</p>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
             <nav>
                 <ul>
                     <li><a href="#">Início</a></li>
@@ -28,6 +29,17 @@
             <div class="postagens">
                 <article id="ultima">
                     <h2>A origem do Homem-Aranha</h2>
+                    <img class="post-img"
+                      srcset="/img/origem_do_homem_aranha_img320x128.jpg 320w,
+                              /img/origem_do_homem_aranha_img600x240.jpg 600w,
+                              /img/origem_do_homem_aranha_img900x360.jpg 900w,
+                              /img/origem_do_homem_aranha_img.jpg 1200w"
+                      sizes="(max-width: 320px) 280px,
+                              (max-width: 600px) 560px,
+                              (max-width: 900px) 860px,
+                              1200px"
+                      src="/img/origem_do_homem_aranha_img.jpg"
+                      alt="A origem do Homem Aranha" />
                     <p>O Homem-Aranha é um dos heróis mais icônicos da Marvel, criado por Stan Lee e Steve Ditko em
                         1962. Sua história começa com Peter Parker, um jovem estudante que ganha poderes após ser picado
                         por uma aranha radioativa.</p>
@@ -44,6 +56,17 @@
                 </article>
                 <article>
                     <h2>Os vilões do Homem-Aranha</h2>
+                    <img class="post-img"
+                      srcset="/img/viloes_homem_aranha_img320x128.jpg 320w,
+                              /img/viloes_homem_aranha_img600x240.jpg 600w,
+                              /img/viloes_homem_aranha_img900x360.jpg 900w,
+                              /img/viloes_homem_aranha_img.jpg 1200w"
+                      sizes="(max-width: 320px) 280px,
+                              (max-width: 600px) 560px,
+                              (max-width: 900px) 860px,
+                              1200px"
+                      src="/img/viloes_homem_aranha_img.jpg"
+                      alt="Vilões do Homem Aranha" />
                     <p>Parte do sucesso do Homem-Aranha vem de sua galeria de vilões memoráveis. Entre eles, destacam-se
                         o Duende Verde, o Doutor Octopus e o Venom.</p>
 
@@ -59,6 +82,17 @@
                 </article>
                 <article>
                     <h2>A vida dupla de Peter Parker</h2>
+                    <img class="post-img"
+                      srcset="/img/vida_dupla_peter_parker_img320x128.jpg 320w,
+                              /img/vida_dupla_peter_parker_img600x240.jpg 600w,
+                              /img/vida_dupla_peter_parker_img900x360.jpg 900w,
+                              /img/vida_dupla_peter_parker_img.jpg 1200w"
+                      sizes="(max-width: 320px) 280px,
+                              (max-width: 600px) 560px,
+                              (max-width: 900px) 860px,
+                              1200px"
+                      src="/img/vida_dupla_peter_parker_img.jpg"
+                      alt="Vida Dupla de Peter Parker" />
                     <p>Uma das características mais marcantes do Homem-Aranha é sua vida dupla. Peter Parker precisa
                         equilibrar suas responsabilidades como herói e sua vida pessoal.</p>
 
@@ -76,6 +110,17 @@
                 </article>
                 <article id="primeira">
                     <h2>O legado do Homem-Aranha</h2>
+                    <img class="post-img"
+                      srcset="/img/legado_homem_aranha_img320x128.jpg 320w,
+                              /img/legado_homem_aranha_img600x240.jpg 600w,
+                              /img/legado_homem_aranha_img900x360.jpg 900w,
+                              /img/legado_homem_aranha_img.jpg 1200w"
+                      sizes="(max-width: 320px) 280px,
+                              (max-width: 600px) 560px,
+                              (max-width: 900px) 860px,
+                              1200px"
+                      src="/img/legado_homem_aranha_img.jpg"
+                      alt="Legado do Homem Aranha" />
                     <p>Ao longo das décadas, o Homem-Aranha se tornou um símbolo cultural global. Ele aparece em
                         quadrinhos, filmes, séries e jogos, conquistando fãs de todas as idades.</p>
 
@@ -91,13 +136,23 @@
                     </p>
                 </article>
             </div>
-            <aside class="social">
-                <img src="https://w0.peakpx.com/wallpaper/916/847/HD-wallpaper-homem-aranha-filmes-herois-homem-aranha-marvel-spider-man.jpg"
-                    alt="Homem Aranha">
-
-                <img src="https://i.pinimg.com/736x/ac/f4/ad/acf4ad0a5417f4e591d35093e741a647.jpg" alt="Homem Aranha">
-
-
+            <aside class="sidebar">
+                <section class="filmes">
+                    <h2>Últimos Filmes</h2>
+                    <ul>
+                        <li><a href="https://www.omelete.com.br/filmes/homem-aranha-um-novo-dia-1-bilhao-de-views-trailer" target="_blank"> O Homem-Aranha: Um Novo Dia</a></li>
+                        <li><a href="https://www.omelete.com.br/filmes/homem-aranha-alem-do-aranhaverso" target="_blank"> O Homem-Aranha: Além do Aranhaverso</a></li>
+                        <li><a href="https://www.omelete.com.br/filmes/homem-aranha-atraves-do-aranhaverso" target="_blank"> O Homem-Aranha: Através do Aranhaverso</a></li>
+                        <li><a href="https://www.omelete.com.br/filmes/homem-aranha-sem-volta-para-casa" target="_blank"> O Homem-Aranha: Sem volta pra casa</a></li>
+                        <li><a href="https://www.omelete.com.br/filmes/homem-aranha-longe-de-casa" target="_blank"> O Homem-Aranha: Longe de Casa</a></li>
+                    </ul>
+                </section>
+                <section class="social">
+                    <h2>Galeria</h2>
+                    <img src="https://w0.peakpx.com/wallpaper/916/847/HD-wallpaper-homem-aranha-filmes-herois-homem-aranha-marvel-spider-man.jpg"
+                        alt="Homem Aranha">
+                    <img src="https://i.pinimg.com/736x/ac/f4/ad/acf4ad0a5417f4e591d35093e741a647.jpg" alt="Homem Aranha">
+                </section>
             </aside>
         </main>
 
@@ -107,6 +162,14 @@
         </footer>
     </div>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('header nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>
